@@ -9,7 +9,7 @@ Our company blog, written in with NodeJS + Gatsby. To start launch a dev environ
 1. Open Terminal or Web IDE
 2. Navigate to the project
   ```sh
-  $ cd compoany-blog
+  $ cd company-blog
   ```
 3. Start developing
   ```sh
