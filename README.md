@@ -8,11 +8,15 @@ Our company blog, written in with NodeJS + Gatsby. To start launch a dev environ
 
 1. Open Terminal or Web IDE
 2. Navigate to the project
+
   ```sh
-  $ cd company-blog
+  cd company-blog
   ```
+
 3. Start developing
+
   ```sh
-  $ gatsby develop
+  gatsby develop
   ```
+
 4. Create a Dev URL in Coder for the project on port `8000`
