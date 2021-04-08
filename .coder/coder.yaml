@@ -10,7 +10,7 @@ workspace:
   configure:
     start: 
       - name: "Testing"
-      run: echo "Hi"
+      command: echo "Hi"
     # start:
     #   - name: "Install the latest dependencies"
     #     env:
