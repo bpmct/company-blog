@@ -8,9 +8,11 @@ workspace:
     memory: 2
     disk: 10
   configure:
-    start: 
-      - name: "Testing"
-      command: echo "Hi"
+    start:
+      - name: "install curl"
+        command: |
+          sudo apt-get update
+          sudo apt-get install -y curl
     # start:
     #   - name: "Install the latest dependencies"
     #     env:
