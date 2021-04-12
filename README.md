@@ -2,7 +2,7 @@
 
 Our company blog, written in with NodeJS + Gatsby. To start launch a dev environment, tap the button:
 
-[![Open in Coder](static/embed-button.svg)](https://dev.coding.pics/environments/git?org=60477cf0-5ef2749239921459ebd51650&image=604789b8-b860880307fa8da696478750&tag=latest&service=github&repo=git@github.com:bpmct/company-blog.git)
+[![Open in Coder](static/embed-button.svg)](https://dev.coding.pics/wac/build?project_oauth_service=github&template_oauth_service=github&project_url=git@github.com:bpmct/company-blog.git&template_url=git@github.com:bpmct/company-blog.git&template_ref=main)
 
 ## To start developing
 

@@ -13,22 +13,25 @@ workspace:
         command: |
           sudo apt-get update
           sudo apt-get install -y curl
-    # start:
-    #   - name: "Install the latest dependencies"
-    #     env:
-    #       GIT_REMOTE: git@github.com:bpmct/company-blog.git
-    #       CLONE_TO: /home/coder/company-blog
-    #     command: |
-    #       # 1. ensure we have GitHub's host key added to known_hosts
-    #       touch ~/.ssh/known_hosts
-    #       if ! ssh-keygen -F github.com > /dev/null; then
-    #         ssh-keyscan github.com >> ~/.ssh/known_hosts 2> /dev/null
-    #       fi
+    start:
+      - name: "Clone the git repository"
+        env:
+          GIT_REMOTE: git@github.com:bpmct/company-blog.git
+          CLONE_TO: /home/coder/company-blog
+        command: |
+          # Check if the project directory already exists 
+          if [ ! -d $CLONE_TO ]; then
 
-    #       # 2. clone our project
-    #       if [ ! -d $CLONE_TO ]; then
-    #         echo "$CLONE_TO is empty... Cloning"
-    #         git clone $GIT_REMOTE $CLONE_TO
-    #       else
-    #         echo "$CLONE_TO exists ✅"
-    #       fi
+            # 1. ensure we have GitHub's host key added to known_hosts
+            touch ~/.ssh/known_hosts
+            if ! ssh-keygen -F github.com > /dev/null; then
+              ssh-keyscan github.com >> ~/.ssh/known_hosts 2> /dev/null
+            fi
+            
+            2. Clone the project
+            echo "$CLONE_TO is empty... Cloning"
+            git clone $GIT_REMOTE $CLONE_TO
+
+          else
+            echo "$CLONE_TO exists ✅"
+          fi
