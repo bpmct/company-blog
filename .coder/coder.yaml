@@ -9,7 +9,9 @@ workspace:
     disk: 10
   configure:
     start:
-      - name: "Clone the git repository"
+      - name: "Configure nvm"
+        command: /coder/configure_nvm.sh
+      - name: "Clone the git repository, if it doesn't exist"
         env:
           GIT_REMOTE: git@github.com:bpmct/company-blog.git
           CLONE_TO: /home/coder/company-blog
