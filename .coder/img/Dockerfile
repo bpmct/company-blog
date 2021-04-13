@@ -18,7 +18,7 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | b
     && nvm alias default 15.12.0 \
     && nvm use default \
     # Install global packages on the default version of node
-    && npm install --global yarn@v1.22.5
+    && npm install --global yarn@v1.22.5 \
     && npm install --global create-react-app@v4.0.2
 
 # Copy our script that configures nvm in PATH
