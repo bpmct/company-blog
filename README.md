@@ -8,6 +8,14 @@ An example Javascript project that is configured for development in Coder. This 
 
 [![Open in Coder](static/embed-button.svg)](https://dev.coding.pics/wac/build?project_oauth_service=github&template_oauth_service=github&project_url=git@github.com:bpmct/company-blog.git&template_url=git@github.com:bpmct/company-blog.git&template_ref=main)
 
+To open in YOUR coder deployment, visit:
+
+```
+https://[your Coder URL]/wac/build?project_oauth_service=github&template_oauth_service=github&project_url=git@github.com:bpmct/company-blog.git&template_url=git@github.com:bpmct/company-blog.git&template_ref=main
+```
+
+Tested in Coder v.1.17.3 ✅
+
 ## To start developing
 
 1. Open Terminal or Web IDE
