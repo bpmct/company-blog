@@ -10,22 +10,22 @@ An example Javascript project that is configured for development in Coder. This 
 
 ## To start developing
 
-Open Terminal or Web IDE
+1. Open Terminal or Web IDE
 
-Navigate to the project
+1. Navigate to the project
 
-  ```sh
-  cd company-blog
-  ```
+    ```sh
+    cd company-blog
+    ```
 
-Start developing
+1. Start developing
 
-  ```sh
-  gatsby develop
-  ```
+    ```sh
+    gatsby develop
+    ```
 
-Create a Dev URL in Coder for the project on port `8000`
+1. Create a Dev URL in Coder for the project on port `8000`
 
-## Todo
+## TODO
 
 - [ ] create dev url in the WAC configure script
