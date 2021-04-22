@@ -33,7 +33,7 @@ workspace:
             echo "$CLONE_TO exists ✅"
           fi
   devURLs:
-    - name: blog
+    - name: webblog
       port: 3000
       scheme: http
       access: private
