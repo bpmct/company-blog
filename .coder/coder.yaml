@@ -2,7 +2,7 @@ version: 0.1
 workspace:
   type: "kubernetes"
   spec:
-    image: codercom/enterprise-node:ubuntu
+    image: bencdr/company-blog:latest
     container-based-vm: true
     cpu: 2
     memory: 2
