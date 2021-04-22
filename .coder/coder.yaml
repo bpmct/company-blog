@@ -4,7 +4,7 @@ workspace:
   spec:
     image: bencdr/company-blog:latest
     container-based-vm: true
-    cpu: 2
+    cpu: 3
     memory: 2
     disk: 10
   configure:
