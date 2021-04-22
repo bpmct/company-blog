@@ -23,4 +23,4 @@ RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | b
 
 # Copy our script that configures nvm in PATH
 # this is configued to run in coder.yaml
-COPY configure_nvm.sh /coder/configure_nvm
+COPY configure_nvm.sh /coder/configure_nvm.sh
