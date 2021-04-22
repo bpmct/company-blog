@@ -32,3 +32,8 @@ workspace:
           else
             echo "$CLONE_TO exists ✅"
           fi
+  devURLs:
+    - name: blog
+      port: 3000
+      scheme: http
+      access: private
