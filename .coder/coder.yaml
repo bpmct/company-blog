@@ -37,7 +37,7 @@ workspace:
         env:
           PROJECT_FOLDER: /home/coder/company-blog
   devURLs:
-    - name: blog1
-      port: 3000
+    - name: companyblog
+      port: 8000
       scheme: http
       access: private
