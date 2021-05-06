@@ -21,7 +21,7 @@ workspace:
 
             # 1. ensure we have GitHub's host key added to known_hosts
             touch ~/.ssh/known_hosts
-            if ! ssh-keygen -F github.com > /dev/null; then
+            if ! grep github.com ~/.ssh/known_hosts > /dev/null; then
               ssh-keyscan github.com >> ~/.ssh/known_hosts 2> /dev/null
             fi
             
