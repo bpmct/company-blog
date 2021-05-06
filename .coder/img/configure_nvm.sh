@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# if nvm command fails, try to add it to 
+# if nvm command fails, try to add it to bash_profile
 if ! command -v nvm &> /dev/null
 then
     echo "nvm command not found... attempting to add to your profile via the install script"
 
-    # Create a .profile file if it doesnt exist
-    if [ ! -f ~/.profile ]; then
-        touch ~/.profile
-        echo "#/bin/sh" > ~/.profile 
+    # Create a .bash_profile file if it doesnt exist
+    if [ ! -f ~/.bash_profile ]; then
+        touch ~/.bash_profile
+        echo "#/bin/sh" > ~/.bash_profile 
     fi
 
     # run the install script to add to profile
