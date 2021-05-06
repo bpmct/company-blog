@@ -20,7 +20,7 @@ Tested in Coder v.1.18.2 ✅
 
 1. Open Terminal or Web IDE
 
-1. Navigate to the project
+1. Navigate to the project (if you opened the terminal)
 
     ```sh
     cd company-blog
@@ -31,9 +31,5 @@ Tested in Coder v.1.18.2 ✅
     ```sh
     gatsby develop
     ```
-
-1. Create a Dev URL in Coder for the project on port `8000`
-
-## TODO
-
-- [ ] create dev url in the WAC configure script
+    
+ All dependencies will be installed
