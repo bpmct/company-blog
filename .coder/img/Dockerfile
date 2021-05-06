@@ -8,6 +8,9 @@ ENV NVM_DIR=/usr/bin/nvm
 RUN mkdir -p $NVM_DIR
 RUN chown coder:coder $NVM_DIR
 
+# Locale fix
+RUN locale-gen en_US.UTF-8
+
 # Install nvm as the "coder" user
 USER coder
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash \
