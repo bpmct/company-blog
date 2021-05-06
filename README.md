@@ -14,7 +14,7 @@ To open in YOUR coder deployment, visit:
 https://[your Coder URL]/wac/build?project_oauth_service=github&template_oauth_service=github&project_url=git@github.com:bpmct/company-blog.git&template_url=git@github.com:bpmct/company-blog.git&template_ref=main
 ```
 
-Tested in Coder v.1.17.3 ✅
+Tested in Coder v.1.18.2 ✅
 
 ## To start developing
 
