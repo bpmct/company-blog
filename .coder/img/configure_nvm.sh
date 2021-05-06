@@ -6,7 +6,10 @@ then
     echo "nvm command not found... attempting to add to your profile via the install script"
 
     # Create a .profile file if it doesnt exist
-    touch ~/.profile
+    if [ ! -f ~/.profile ]; then
+        touch ~/.profile
+        echo "#/bin/sh" > ~/.profile 
+    fi
 
     # run the install script to add to profile
     $NVM_DIR/install.sh
