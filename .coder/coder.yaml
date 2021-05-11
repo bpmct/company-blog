@@ -8,7 +8,7 @@ workspace:
         value: bencdr/company-blog:latest
       container-based-vm: 
         policy: read
-        value: 2
+        value: true
       memory: 
         policy: write
         value: 2
