@@ -3,6 +3,9 @@ workspace:
   type: "kubernetes"
   specs:
     kubernetes:
+      cpu:
+        policy: read
+        value: 1
       image:
         policy: read
         value: bencdr/company-blog:latest
