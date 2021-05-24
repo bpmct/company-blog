@@ -4,23 +4,17 @@ workspace:
   specs:
     kubernetes:
       cpu:
-        policy: read
         value: 1
       image:
-        policy: read
         value: bencdr/company-blog:latest
       container-based-vm: 
-        policy: read
         value: true
       memory: 
-        policy: write
         value: 2
       disk: 
-        policy: write
         value: 10
   configure:
     start:
-      policy: write
       value: 
         - name: "Configure nvm"
           command: /coder/configure_nvm.sh
@@ -50,7 +44,6 @@ workspace:
           env:
             PROJECT_FOLDER: /home/coder/company-blog
   dev-urls:
-    policy: read
     value:
       - name: blog2
         port: 8000
