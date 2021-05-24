@@ -11,7 +11,7 @@ Folder structure includes:
 - [.coder/coder.yml](.coder/coder.yaml) - a workspace template file
 - [.coder/img/](.coder/img/) - a Docker image with the necessary dependencies (Node 15, Gatsby 4, yarn)
 - [.github/workflows/build-image.yml](.github/workflows/build-image.yml) - GitHub action to build & push the image to the Docker Hub
-- `src/` the project files
+- [src/](src/) the project files
 
 To open in YOUR coder deployment, visit:
 
