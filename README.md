@@ -4,14 +4,14 @@ An example Javascript project that is configured for development in Coder.
 
 ![Screenshot of blog running in Coder](static/screenshot.png)
 
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://dev.coding.pics/wac/build?template_oauth_service=github&template_url=https://github.com/bpmct/company-blog&template_ref=main&template_filepath=.coder/coder.yaml)
+
 Folder structure includes:
 
 - [.coder/coder.yml](.coder/coder.yaml) - a workspace template file
 - [.coder/img/](.coder/img/) - a Docker image with the necessary dependencies (Node 15, Gatsby 4, yarn)
 - [.github/workflows/build-image.yml](.github/workflows/build-image.yml) - GitHub action to build & push the image to the Docker Hub
 - `src/` the project files
-
-[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://dev.coding.pics/wac/build?template_oauth_service=github&template_url=https://github.com/bpmct/company-blog&template_ref=main&template_filepath=.coder/coder.yaml)
 
 To open in YOUR coder deployment, visit:
 
