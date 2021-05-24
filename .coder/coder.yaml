@@ -1,43 +1,51 @@
-version: 0.1
+version: 0.2
 workspace:
   type: "kubernetes"
-  spec:
-    image: bencdr/company-blog:latest
-    container-based-vm: true
-    cpu: 3
-    memory: 2
-    disk: 10
+  specs:
+    kubernetes:
+      cpu:
+        value: 1
+      image:
+        value: bencdr/company-blog:latest
+      container-based-vm: 
+        value: true
+      memory: 
+        value: 2
+      disk: 
+        value: 10
   configure:
     start:
-      - name: "Configure nvm"
-        command: /coder/configure_nvm.sh
-      - name: "Clone the git repository, if it doesn't exist"
-        env:
-          GIT_REMOTE: git@github.com:bpmct/company-blog.git
-          CLONE_TO: /home/coder/company-blog
-        command: |
-          # Check if the project directory already exists 
-          if [ ! -d $CLONE_TO ]; then
+      value: 
+        - name: "Configure nvm"
+          command: /coder/configure_nvm.sh
+        - name: "Clone the git repository, if it doesn't exist"
+          env:
+            GIT_REMOTE: git@github.com:bpmct/company-blog.git
+            CLONE_TO: /home/coder/company-blog
+          command: |
+            # Check if the project directory already exists 
+            if [ ! -d $CLONE_TO ]; then
 
-            # 1. ensure we have GitHub's host key added to known_hosts
-            touch ~/.ssh/known_hosts
-            if ! grep github.com ~/.ssh/known_hosts > /dev/null; then
-              ssh-keyscan github.com >> ~/.ssh/known_hosts 2> /dev/null
+              # 1. ensure we have GitHub's host key added to known_hosts
+              touch ~/.ssh/known_hosts
+              if ! grep github.com ~/.ssh/known_hosts > /dev/null; then
+                ssh-keyscan github.com >> ~/.ssh/known_hosts 2> /dev/null
+              fi
+              
+              2. Clone the project
+              echo "$CLONE_TO is empty... Cloning"
+              git clone $GIT_REMOTE $CLONE_TO
+
+            else
+              echo "$CLONE_TO exists ✅"
             fi
-            
-            2. Clone the project
-            echo "$CLONE_TO is empty... Cloning"
-            git clone $GIT_REMOTE $CLONE_TO
-
-          else
-            echo "$CLONE_TO exists ✅"
-          fi
-      - name: "Set default folder"
-        command: curl https://gist.githubusercontent.com/bpmct/b48b99007284444eea94fe9e96d4a329/raw/set_first_dir.sh | sh
-        env:
-          PROJECT_FOLDER: /home/coder/company-blog
-  devURLs:
-    - name: companyblog
-      port: 8000
-      scheme: http
-      access: private
+        - name: "Set default folder"
+          command: curl https://gist.githubusercontent.com/bpmct/b48b99007284444eea94fe9e96d4a329/raw/set_first_dir.sh | sh
+          env:
+            PROJECT_FOLDER: /home/coder/company-blog
+  dev-urls:
+    value:
+      - name: blog2
+        port: 8000
+        scheme: http
+        access: private
