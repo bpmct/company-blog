@@ -2,9 +2,9 @@
 
 An example Javascript project that is configured for development in Coder.
 
-![Screenshot of blog running in Coder](static/screenshot.png)
-
 [![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://sandbox.coder.com/wac/build?template_oauth_service=github&template_url=https://github.com/bpmct/company-blog&template_ref=main&template_filepath=.coder/coder.yaml)
+
+![Screenshot of blog running in Coder](static/screenshot.png)
 
 Folder structure includes:
 
