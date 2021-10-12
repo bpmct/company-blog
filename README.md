@@ -4,7 +4,7 @@ An example Javascript project that is configured for development in Coder.
 
 ![Screenshot of blog running in Coder](static/screenshot.png)
 
-[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://dev.coding.pics/wac/build?template_oauth_service=github&template_url=https://github.com/bpmct/company-blog&template_ref=main&template_filepath=.coder/coder.yaml)
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://sandbox.coder.com/wac/build?template_oauth_service=github&template_url=https://github.com/bpmct/company-blog&template_ref=main&template_filepath=.coder/coder.yaml)
 
 Folder structure includes:
 
@@ -18,8 +18,6 @@ To open in YOUR coder deployment, visit:
 ```
 https://[your Coder URL]/wac/build?template_oauth_service=github&template_url=https://github.com/bpmct/company-blog&template_ref=main&template_filepath=.coder/coder.yaml)
 ```
-
-Tested in Coder v.1.19 ✅
 
 ## To start developing
 

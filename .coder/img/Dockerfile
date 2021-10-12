@@ -13,6 +13,7 @@ RUN locale-gen en_US.UTF-8
 
 # Install nvm as the "coder" user
 USER coder
+
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash \
     && . $NVM_DIR/nvm.sh \
     # Install any Node versions we need
