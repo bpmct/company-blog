@@ -4,13 +4,13 @@ workspace:
   specs:
     kubernetes:
       cpu:
-        value: 1
+        value: 2
       image:
         value: bencdr/company-blog:latest
       container-based-vm: 
         value: true
       memory: 
-        value: 2
+        value: 4
       disk: 
         value: 10
   configure:
@@ -48,4 +48,4 @@ workspace:
       - name: blog
         port: 8000
         scheme: http
-        access: private
+        access: public
